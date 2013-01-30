@@ -1,1 +1,48 @@
-target/
+# Stellar .gitignore file
+# Files and patterns that will be ignored by status, add and by
+# implication checks unless locally overriden.
+
+syntax: glob
+
+# java deployment assets
+*.class
+*.jar
+
+# mvn build trees
+target/*
+cargo/*
+bin/*
+
+# deprecated scripting files
+*.pl
+*.php
+
+# editor backup files
+*~
+*.bak
+*.swp
+
+# sundry useless files
+*.out
+
+# hg merge reject files
+*.rej
+
+# hg originals arising from reverts
+*.orig
+
+# CVS leftovers
+CVS/*
+.cvsignore
+
+# Mac idiosyncrasies
+.DS_Store
+
+#ignore ark/.classpath file at this gets created by maven
+.classpath
+.project
+.settings/*
+.idea/*
+*.iml
+src/main/resources/maven.build.properties
+src/main/java/maven.build.properties
